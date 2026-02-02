@@ -60,8 +60,8 @@ print(type(number_str))  # <class 'str'>
 # # ──────────────────────────────────────────────
 # print(f"Name: {name}, Age: {age}")
 # print(f"Next year: {age + 1}")
-# print(f"Pi: {3.14159:.2f}")     # Format specifier: 3.14
-# print(f"{'hello':>20}")          # Right-align in 20 chars
+# print(F"Pi: {3.14159:.2f}")      # Format specifier: 3.14. Note: uppercase F works as well
+# print(f"{'hello':>20}")           # Right-align in 20 chars
 
 
 # # ============================================================
@@ -120,8 +120,8 @@ print(type(number_str))  # <class 'str'>
 # print(greeting[-5])   # 'h'
 
 # # Common errors
-# # print(greeting[5])    # IndexError: string index out of range
-# # greeting[0] = 'H'    # TypeError: strings are immutable
+# # print(greeting[5])    # What is the output?
+# # greeting[0] = 'H'    # What is the output?
 
 
 # # ============================================================
@@ -131,13 +131,13 @@ print(type(number_str))  # <class 'str'>
 # # ──────────────────────────────────────────────
 # # 📌 Snippet 29 — String Slicing
 # # ──────────────────────────────────────────────
-# greeting = "hello"
+# greeting = "hello"  # 'h':0:-5, 'e':+1:-4, 'l':+2:-3, 'l':+3:-2, 'o':+4:-1
 
 # # Basic slicing
 # print(greeting[0:3])   # "hel"
 # print(greeting[:3])    # "hel" (start defaults to 0)
 # print(greeting[2:])    # "llo" (stop defaults to end)
-# print(greeting[:])     # "hello" (full copy)
+# print(greeting[:])     # "hello" (entire string)
 
 # # Negative indices
 # print(greeting[-5:-2]) # "hel"
@@ -147,42 +147,3 @@ print(type(number_str))  # <class 'str'>
 # print(greeting[::2])   # "hlo" (every 2nd character)
 # print(greeting[::-1])  # "olleh" (reverse!)
 # print(greeting[4:1:-1])# "oll"
-
-
-# # ============================================================
-# # Exercise 2: Strings
-# # ============================================================
-
-# # ──────────────────────────────────────────────
-# # 📌 Snippet 30 — Exercise 2, Part A: Predict the outputs
-# # ──────────────────────────────────────────────
-# text = "Learn Python, be happy!"
-# print(text[6:12])
-# print(text[-6:])
-# print(text[::3])
-
-
-# # ──────────────────────────────────────────────
-# # 📌 Snippet 31 — Exercise 2, Part B: Slicing tasks
-# # ──────────────────────────────────────────────
-# quote = "Learn Python, be happy!"
-
-# # Task 1: Extract "Python" using only positive indices
-# # task1 = ??
-
-# # Task 2: Extract "Python" using only negative indices
-# # task2 = ??
-
-# # Task 3: Reverse "Python" to get "nohtyP" using slicing
-# # task3 = ??
-
-# # Task 4: Reverse the entire string
-# # task4 = ??
-
-
-# # ──────────────────────────────────────────────
-# # 📌 Snippet 32 — Exercise 2, Part C: Second half
-# # ──────────────────────────────────────────────
-# text = "HelloWorld"
-# # second_half = ??
-# # print(second_half)  # Expected: World

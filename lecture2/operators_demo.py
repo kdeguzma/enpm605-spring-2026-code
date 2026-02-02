@@ -51,9 +51,17 @@ print(f"x = {x}")
 # print(not (x == 5))        # False
 
 # # Logical operators with non-boolean values
-# print("hello" and 0)       # 0 (returns last evaluated operand)
-# print("hello" or 0)        # "hello"
-# print(not "")              # True (empty string is falsy)
+# # and: returns first falsy, or last value if all truthy
+# print("hello" and 0)          # 0 ("hello" is truthy, so check 0 -> falsy)
+# print("hello" and "world")    # "world" (both truthy, return last)
+
+# # or: returns first truthy, or last value if all falsy
+# print("hello" or 0)           # "hello" (truthy, stop immediately)
+# print(0 or "default")         # "default" (0 is falsy, check next)
+
+# # not: always returns a bool
+# print(not "")                  # True (empty string is falsy)
+# print(not "hello")             # False (non-empty string is truthy)
 
 
 # # ============================================================
@@ -80,29 +88,3 @@ print(f"x = {x}")
 # print(a == b)   # True (same values)
 # print(a is b)   # False (different objects)
 # print(a is c)   # True (same object)
-
-
-# # ============================================================
-# # Exercise 1: Operators
-# # ============================================================
-
-# # ──────────────────────────────────────────────
-# # 📌 Snippet 14 — Exercise 1: Operators
-# # ──────────────────────────────────────────────
-# # Predict the output of each expression BEFORE running the code.
-
-# # Arithmetic
-# print(17 // 5)
-# print(17 % 5)
-# print(2 ** 0.5)
-# print(-7 // 2)
-
-# # Logical with non-boolean values
-# print(0 or "default")
-# print("hello" and "world")
-# print(not [])
-
-# # Chained comparison
-# x = 15
-# print(10 < x < 20)
-# print(10 < x > 20)

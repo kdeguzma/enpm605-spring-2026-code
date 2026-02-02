@@ -85,29 +85,3 @@ print("always runs")
 #     print("Pleasant")  # This runs
 # else:
 #     print("Cool")
-
-
-# # ============================================================
-# # Exercise 3: Control Flow
-# # ============================================================
-
-# # ──────────────────────────────────────────────
-# # 📌 Snippet 38 — Exercise 3, Part A: Battery classifier
-# # ──────────────────────────────────────────────
-# battery_level = 45  # Change this value to test
-
-# # If battery_level >= 80: print "Battery: Full"
-# # If 50 <= battery_level < 80: print "Battery: Moderate"
-# # If 20 <= battery_level < 50: print "Battery: Low"
-# # If battery_level < 20: print "Battery: Critical — return to base!"
-
-
-# # ──────────────────────────────────────────────
-# # 📌 Snippet 39 — Exercise 3, Part B: Leap year checker
-# # ──────────────────────────────────────────────
-# year = 2024
-
-# # A year is a leap year if:
-# # - Divisible by 4 AND not divisible by 100
-# # - OR divisible by 400
-# # Print "Leap year" or "Not a leap year"
