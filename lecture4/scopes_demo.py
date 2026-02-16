@@ -60,12 +60,12 @@
 # # ──────────────────────────────────────────────
 # # 📌 Snippet 25
 # # ──────────────────────────────────────────────
-global_var = "I am global"
+# global_var = "I am global"
 
-def my_func():
-    print(global_var)  # Accessible (reading is fine)
+# def my_func():
+#     print(global_var)  # Accessible (reading is fine)
 
-my_func()
+# my_func()
 
 
 # # ──────────────────────────────────────────────
@@ -122,3 +122,30 @@ my_func()
 #     inner_function()
 
 # outer_function()
+
+# ──────────────────────────────────────────────
+# 📌 Overview
+# ──────────────────────────────────────────────
+# import builtins
+
+# x = "I'm global"
+
+
+# def outer():
+#     y = "I'm enclosing"
+
+#     def inner():
+#         z = "I'm local"
+
+#         print("LOCAL:", locals())
+#         print("GLOBAL:", globals())
+#         print("BUILTINS:", dir(builtins))
+
+#         # Enclosing scope (no direct call, but you can inspect):
+#         print("ENCLOSING free vars:", inner.__code__.co_freevars)
+#         print("ENCLOSING values:", [c.cell_contents for c in inner.__closure__])
+
+#     inner()
+
+
+outer()
